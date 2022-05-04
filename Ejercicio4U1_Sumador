@@ -1,0 +1,11 @@
+-- Code your design here
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use work.std_arith.all;
+entity Sumador is 
+port (
+A, B: in std_logic_vector(0 to 1);
+  	Suma: out std_logic_vector(0 to 1);
+);
+end Sumador;
