@@ -1,0 +1,12 @@
+-- Code your design here
+
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+entity Bloque is 
+port (
+A, B: in std_logic;
+  	X: in std_logic_vector(0 to 1);
+Z: out std_logic_vector(0 to 1);
+);
+end Bloque;
