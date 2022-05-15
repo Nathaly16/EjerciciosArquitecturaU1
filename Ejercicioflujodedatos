@@ -1,0 +1,16 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Ejercicio17 is
+port (
+			a,b: in std_logic_vector(0 to 3); 
+			F : out std_logic);
+end Ejercicio17;
+
+
+architecture flujodatos of Ejercicio17 is
+begin
+	F <= (a(0) or b(0)) and (a(1) or b(1)) and (a(2) or b(2)) and (a(3) or b(3));
+
+end flujodatos;
+
