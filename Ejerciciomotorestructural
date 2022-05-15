@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity motor is 
+port(
+      a,b,c: in std_logic;
+      y: out std_logic;
+     );
+end motor;
+
+architecture estructural of motor is
+signal x: bit_vector(0 to 2);
+begin
+
+U0:and2 port map (a, not b, x(o));
+U1:and2 port map (not b, c, x(1));
+U2:and2 port map (a, c, x(2));
+U3:or3 port map (x(0), x(1), x(2), y);
+
+end estructural;
