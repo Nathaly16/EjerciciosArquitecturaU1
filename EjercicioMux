@@ -1,0 +1,9 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity multiplexor is
+
+	port(E: in std_logic_vector (3  downto 0); 
+	       S : in std_logic_vector(1 downto 0);
+                   F: out std_logic);
+ end multiplexor    
