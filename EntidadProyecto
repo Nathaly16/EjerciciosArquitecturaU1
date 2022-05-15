@@ -3,7 +3,8 @@ use ieee.std_logic_164.all;
 
 entity Proyecto is 
 port(
-    A, B: in std_logic;
-    C: out std_logic);
+    P: in std_logic_vector(o to 2);
+    A: out std_logic_vector(o to 1);
+    X: inout std_logic);
 end Proyecto;
 
