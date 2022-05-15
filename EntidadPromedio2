@@ -1,0 +1,9 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Promedio2 is
+port(
+    A, B: in std_logic_vector(o to 3);
+    C: out std_logic_vector(o to 3));
+    
+ end Promedio2
