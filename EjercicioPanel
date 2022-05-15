@@ -1,0 +1,17 @@
+Library ieee;
+use ieee.std_logic_1164.all;
+
+entity panel is
+port(
+      a: in std_logic;
+      b: in std_logic;
+      c,d,e: out std_logic;
+      
+      );
+end panel;
+
+architecture arqPanel of panel is
+begin
+  c<= '1' when (a and b = '0');
+  d and e <= 1 when (a and b = '1');
+end arqPanel;
