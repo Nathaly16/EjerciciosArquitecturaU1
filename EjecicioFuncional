@@ -1,0 +1,20 @@
+library IEEE;
+use IEEE.std_logic_ll64.all;
+
+  entity Ejercicio is
+      port(
+          A,B: IN std_logic;
+          C: out std_logic
+      );
+  end Ejercicio;
+
+  architecture estilofuncional of Ejercicio is
+  begin 
+	process(A,B)-- es sensible cuando se tiene una variacion de estas señales a y b
+  begin
+    if A = 1 or B= 1 or C=1 then
+     C <= '1';
+    else C<='0';
+		end if;
+	end process;
+  end estilofuncional;
